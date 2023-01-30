@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		417365CE29876E0600D0EB0E /* DS-Digital.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 417365CD29876E0600D0EB0E /* DS-Digital.ttf */; };
 		417AA54229364FF1008F55E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417AA54129364FF1008F55E4 /* AppDelegate.swift */; };
 		417AA54429364FF1008F55E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417AA54329364FF1008F55E4 /* SceneDelegate.swift */; };
 		417AA54629364FF1008F55E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417AA54529364FF1008F55E4 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		417365CD29876E0600D0EB0E /* DS-Digital.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DS-Digital.ttf"; sourceTree = "<group>"; };
 		417AA53E29364FF1008F55E4 /* Volleyball scorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Volleyball scorer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		417AA54129364FF1008F55E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		417AA54329364FF1008F55E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				417AA54529364FF1008F55E4 /* ViewController.swift */,
 				417AA54729364FF1008F55E4 /* Main.storyboard */,
 				417AA54A29364FF2008F55E4 /* Assets.xcassets */,
+				417365CD29876E0600D0EB0E /* DS-Digital.ttf */,
 				417AA54C29364FF2008F55E4 /* LaunchScreen.storyboard */,
 				417AA54F29364FF2008F55E4 /* Info.plist */,
 			);
@@ -125,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				417365CE29876E0600D0EB0E /* DS-Digital.ttf in Resources */,
 				417AA54E29364FF2008F55E4 /* LaunchScreen.storyboard in Resources */,
 				417AA54B29364FF2008F55E4 /* Assets.xcassets in Resources */,
 				417AA54929364FF1008F55E4 /* Main.storyboard in Resources */,

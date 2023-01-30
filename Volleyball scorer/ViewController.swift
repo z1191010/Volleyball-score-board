@@ -7,7 +7,6 @@
 
 import UIKit
 
-
 class ViewController: UIViewController, UIColorPickerViewControllerDelegate {
     //左邊分數欄位
     @IBOutlet weak var ScoreA: UILabel!
@@ -27,8 +26,40 @@ class ViewController: UIViewController, UIColorPickerViewControllerDelegate {
     @IBOutlet weak var rightBall: UIImageView!
     //Choose Server Button Outlet
     @IBOutlet weak var chooseButton: UIButton!
+    
     //宣告一個 Array 用以記錄發球順序
     var history = [String]()
+    
+    // UI設定
+    func UISetp() {
+        ScoreA.layer.cornerRadius = 25
+        ScoreB.layer.cornerRadius = 25
+        RoundA.layer.cornerRadius = 10
+        RoundB.layer.cornerRadius = 10
+        NameA.layer.cornerRadius = 10
+        NameB.layer.cornerRadius = 10
+        
+        ScoreA.layer.borderWidth = 3
+        ScoreA.layer.backgroundColor = UIColor.tintColor.cgColor
+        ScoreA.font = UIFont(name: "DS-Digital", size: 200)
+        ScoreB.layer.borderWidth = 3
+        ScoreB.layer.backgroundColor = UIColor.red.cgColor
+        ScoreB.font = UIFont(name: "DS-Digital", size: 200)
+        
+        NameA.layer.borderWidth = 3
+        NameA.layer.backgroundColor = UIColor.tintColor.cgColor
+        NameB.layer.borderWidth = 3
+        NameB.layer.backgroundColor = UIColor.red.cgColor
+        
+        RoundA.layer.borderWidth = 3
+        RoundA.layer.backgroundColor = UIColor.systemYellow.cgColor
+        RoundA.font = UIFont(name: "DS-Digital", size: 100)
+        
+        RoundB.layer.borderWidth = 3
+        RoundB.layer.backgroundColor = UIColor.systemYellow.cgColor
+        RoundB.font = UIFont(name: "DS-Digital", size: 100)
+        
+    }
     
     //全部重置 (包含局數也將歸 0 ，僅用在 resetButton 及 viewDidLoad )
     func resetGame (){
@@ -188,6 +219,7 @@ class ViewController: UIViewController, UIColorPickerViewControllerDelegate {
         resetGame()
         leftBall.isHidden = true
         rightBall.isHidden = true
+        UISetp()
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
@@ -207,7 +239,7 @@ class ViewController: UIViewController, UIColorPickerViewControllerDelegate {
         checkWin()
         //同時每點一下 History Array 都會記錄一筆 String 為 "A" 的資料，以作為後續球權變更的依據
         history.append("A")
-        //這邊取出 Array 值僅是要確認球權是否有正確轉移
+        //這邊取出 Array 值僅是要確認球權是否有正確增加
         print(history)
     }
     
@@ -221,7 +253,7 @@ class ViewController: UIViewController, UIColorPickerViewControllerDelegate {
         checkWin()
         //同時每點一下 History Array 都會記錄一筆 String 為 "B" 的資料，以作為後續球權變更的依據
         history.append("B")
-        //這邊取出 Array 值僅是要確認球權是否有正確轉移
+        //這邊取出 Array 值僅是要確認球權是否有正確增加
         print(history)
     }
     
